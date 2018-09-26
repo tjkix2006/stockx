@@ -1,0 +1,70 @@
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  animation: App-logo-spin infinite 20s linear;
+  height: 80px;
+}
+
+.App-header {
+  background-color: #222;
+  height: 150px;
+  padding: 20px;
+  color: white;
+}
+
+.App-title {
+  font-size: 1.5em;
+}
+
+.App-intro {
+  font-size: large;
+}
+
+@keyframes App-logo-spin {
+  from { transform: rotate(0deg); }
+  to { transform: rotate(360deg); }
+}
+
+/*
+ * Styles for shelfs
+ */
+.App-content {
+  display: flex;
+  flex: 1;
+}
+
+.Inventory {
+  flex: 1;
+  padding: 2rem;
+}
+
+.Inventory-form {
+  text-align: left;
+  width: 200px;
+  padding: 2rem;
+}
+
+.Inventory-form button, .Inventory-form input {
+  width: 100%;
+}
+
+.form-input, .Inventory-form button {
+  margin-bottom: 1rem;
+}
+
+.Inventory-row {
+  display: flex;
+}
+ 
+.Inventory-slot {
+  flex: 1;
+  border: 1px solid #eee;
+  padding: 2rem;
+  cursor: pointer;
+}
+
+.Inventory-slot.selected {
+  border-color: #ff0000;
+}
